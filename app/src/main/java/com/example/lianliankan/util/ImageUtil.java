@@ -25,7 +25,7 @@ public class ImageUtil {
         try {
             Field[] allIDs = R.drawable.class.getFields();
             for (Field field : allIDs) {
-                if (field.getName().indexOf("p_") != -1) {
+                if (field.getName().indexOf("cloudy_") != -1) {
                     IDs.add(field.getInt(R.drawable.class));
                 }
             }
